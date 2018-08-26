@@ -1,0 +1,14 @@
+void setup() 
+{
+ Serial.begin(9600);
+ Serial.println("CLEARDATA");//clear excel sheet
+ Serial.println("LABEL,current time,random no.,name");//label for ms-excel
+}
+void loop()
+{
+Serial.print("DATA,TIME,");
+Serial.print(random(0,100));//random number generator from 0 to 100
+Serial.print(",");//print "," for different value
+Serial.println("sanjay");
+delay(1000);
+}
